@@ -1,0 +1,30 @@
+doc electron: https://www.electronjs.org/pt/docs/latest/
+
+gerar o executável:
+    npm install --save-dev electron-builder
+    adicionar no 'scripts' do package.json:
+        "build": "electron-builder"
+    adicionar na seção 'build':
+        "target": ["deb"],
+        "category": "Utility",
+        "productName": "Kanban Electron App",
+
+    A parte do "author" tem que estar assim:
+        "author": {
+            "name": "Álvaro",
+            "email": "alvaro220592@gmail.com"
+        },
+
+Instalar o pacote:
+    Na pasta dist/ é gerado o arquivo. No caso foi "vanilla_electron_kanban_1.0.0_amd64.deb"
+    Então tem que ir até a pasta e instalar com:
+        sudo dpkg -i vanilla_electron_kanban_1.0.0_amd64.deb
+
+Para implementar atualizações automáticas em seu sistema Electron utilizando o GitHub como repositório de atualizações, você pode usar o electron-updater, que trabalha com o electron-builder para facilitar o processo de distribuição e atualização de aplicações.
+    npm install electron-updater --save
+    adicionar à seção 'build' do package.json:
+        "publish": {
+            "provider": "github",
+            "owner": "alvaro220592",
+            "repo": "vanilla_electron_kanban"
+        }

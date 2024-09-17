@@ -1,0 +1,46 @@
+{
+  "name": "vanilla_electron_kanban",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvaro220592/vanilla_electron_kanban.git"
+  },
+  "keywords": [
+    "vanilla",
+    "electron",
+    "kanban"
+  ],
+  "author": {
+    "name": "Álvaro",
+    "email": "alvaro220592@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alvaro220592/vanilla_electron_kanban/issues"
+  },
+  "homepage": "https://github.com/alvaro220592/vanilla_electron_kanban#readme",
+  "devDependencies": {
+    "electron": "^32.1.0"
+  },
+  "build": {
+    "productName": "Kanban Desktop App",
+    "appId": "com.example.app",
+    "linux": {
+      "icon": "assets/icons/kanban/kanban_256.png",
+      "target": ["deb"],
+      "category": "Utility"
+    },
+    "publish": {
+      "provider": "github",
+      "owner": "alvaro220592",
+      "repo": "vanilla_electron_kanban"
+    }
+  }
+}

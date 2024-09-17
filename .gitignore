@@ -1,0 +1,43 @@
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+.pnpm-debug.log*
+
+# Diretórios de build e pacotes gerados
+dist/
+out/
+build/
+
+# Sistema de controle de versões
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Diretórios do Electron
+electron-builder.json
+*.local
+
+# Arquivos de cache do npm ou Yarn
+.cache/
+.pnp/
+.pnp.js
+
+# Gerados pelo sistema operacional
+Thumbs.db
+.DS_Store
+
+# Arquivos de configuração de ambientes específicos
+.env
+.env.local
+.env.*.local
+
+# Arquivos de lock específicos do sistema
+package-lock.json
+yarn.lock
