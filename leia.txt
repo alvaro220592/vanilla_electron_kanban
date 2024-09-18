@@ -21,10 +21,12 @@ Instalar o pacote:
         sudo dpkg -i vanilla_electron_kanban_1.0.0_amd64.deb
 
 Para implementar atualizações automáticas em seu sistema Electron utilizando o GitHub como repositório de atualizações, você pode usar o electron-updater, que trabalha com o electron-builder para facilitar o processo de distribuição e atualização de aplicações.
-    npm install electron-updater --save
+    npm install electron-updater
     adicionar à seção 'build' do package.json:
         "publish": {
             "provider": "github",
             "owner": "alvaro220592",
             "repo": "vanilla_electron_kanban"
         }
+    
+    O resto é no codigo

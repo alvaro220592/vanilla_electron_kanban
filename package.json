@@ -12,6 +12,10 @@
     "type": "git",
     "url": "git+https://github.com/alvaro220592/vanilla_electron_kanban.git"
   },
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
   "keywords": [
     "vanilla",
     "electron",
@@ -27,14 +31,15 @@
   },
   "homepage": "https://github.com/alvaro220592/vanilla_electron_kanban#readme",
   "devDependencies": {
-    "electron": "^32.1.0"
+    "electron": "^32.1.0",
+    "electron-builder": "^25.0.5"
   },
   "build": {
     "productName": "Kanban Desktop App",
     "appId": "com.example.app",
     "linux": {
       "icon": "assets/icons/kanban/kanban_256.png",
-      "target": ["deb"],
+      "target": "AppImage",
       "category": "Utility"
     },
     "publish": {
@@ -42,5 +47,8 @@
       "owner": "alvaro220592",
       "repo": "vanilla_electron_kanban"
     }
+  },
+  "dependencies": {
+    "electron-updater": "^6.3.4"
   }
 }

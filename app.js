@@ -1,5 +1,4 @@
-addEventListener('DOMContentLoaded', function(){
-    document.getElementById('btn').addEventListener('click', function(){
-        console.log('ok');
-    })
-})
+document.getElementById('check_for_updates').addEventListener('click', () => {
+    window.electronAPI.checkForUpdates();
+});
+  
