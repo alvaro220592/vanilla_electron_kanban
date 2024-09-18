@@ -11,6 +11,7 @@ logs/
 
 # Diretórios de build e pacotes gerados
 dist/
+!dist/latest-linux.yml
 out/
 build/
 
